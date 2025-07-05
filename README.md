@@ -1,4 +1,4 @@
-# Sarah Johnson Photography Portfolio
+l # Raw Captures Photography Portfolio
 
 A professional portfolio website for a wedding photographer built with React, JavaScript, and Tailwind CSS.
 

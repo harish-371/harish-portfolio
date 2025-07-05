@@ -19,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
     
     const formDataToSend = new FormData();
-    formDataToSend.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY'); // Replace with actual key
+    formDataToSend.append('access_key', 'bf309100-ac32-4647-8249-ef9e02aec3a3');
     formDataToSend.append('name', formData.name);
     formDataToSend.append('email', formData.email);
     formDataToSend.append('subject', formData.subject);

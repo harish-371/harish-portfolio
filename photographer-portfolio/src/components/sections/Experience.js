@@ -3,79 +3,103 @@ import React from 'react';
 const Experience = () => {
   const stats = [
     {
-      number: '500+',
-      label: 'Weddings Captured',
-      icon: '💍',
-      description: 'Beautiful wedding ceremonies documented with care and precision'
-    },
-    {
-      number: '1200+',
-      label: 'Photoshoots Completed',
-      icon: '📸',
-      description: 'Professional photoshoots across various categories and styles'
+      number: '200+',
+      label: 'Events Covered',
+      icon: '🎉',
+      description: 'Weddings, half sarees, birthdays, and various special celebrations'
     },
     {
       number: '8+',
       label: 'Years of Experience',
       icon: '⭐',
-      description: 'Dedicated years perfecting the art of photography'
+      description: 'Dedicated years perfecting the art of photography since 2017'
     },
     {
-      number: '50+',
-      label: 'Events Covered',
-      icon: '🎉',
-      description: 'Corporate events, parties, and special celebrations'
+      number: '150+',
+      label: 'Weddings Captured',
+      icon: '💍',
+      description: 'Beautiful wedding ceremonies documented with artistic vision'
     },
     {
       number: '300+',
-      label: 'Happy Families',
-      icon: '👨‍👩‍👧‍👦',
-      description: 'Family portraits and milestone celebrations captured'
+      label: 'Happy Clients',
+      icon: '😊',
+      description: 'Satisfied clients across various photography categories'
     },
     {
-      number: '25+',
-      label: 'Awards & Recognition',
-      icon: '🏆',
-      description: 'Industry awards and client recognition for excellence'
+      number: '50+',
+      label: 'Half Saree Events',
+      icon: '�',
+      description: 'Traditional half saree ceremonies beautifully captured'
+    },
+    {
+      number: '100+',
+      label: 'Fashion Shoots',
+      icon: '📸',
+      description: 'Creative fashion photography and portfolio shoots'
     }
   ];
 
-  const achievements = [
+  const photographyJourney = [
     {
-      year: '2023',
-      title: 'Best Wedding Photographer',
-      organization: 'Regional Photography Awards',
-      description: 'Recognized for excellence in wedding photography and client satisfaction'
+      year: '2017',
+      title: 'Photography Journey Begins',
+      milestone: 'First Camera Purchase',
+      description: 'Started exploring photography as a hobby with my first DSLR camera'
     },
     {
-      year: '2022',
-      title: 'Featured Artist',
-      organization: 'Photography Masters Magazine',
-      description: 'Featured work in the annual showcase of top photographers'
+      year: '2018',
+      title: 'Learning & Practice',
+      milestone: 'Skill Development',
+      description: 'Dedicated time to learning photography techniques and practicing regularly'
     },
     {
-      year: '2021',
-      title: 'People\'s Choice Award',
-      organization: 'Local Photography Competition',
-      description: 'Voted by the community for outstanding portrait photography'
+      year: '2019',
+      title: 'First Professional Shoots',
+      milestone: 'Career Transition',
+      description: 'Transitioned from hobby to profession with first paid photography assignments'
     },
     {
       year: '2020',
-      title: 'Certified Professional',
-      organization: 'Professional Photographers Association',
-      description: 'Achieved professional certification in advanced photography techniques'
+      title: 'Specialization Focus',
+      milestone: 'Wedding Photography',
+      description: 'Specialized in wedding photography and traditional ceremony documentation'
+    },
+    {
+      year: '2021',
+      title: 'Business Growth',
+      milestone: 'Client Base Expansion',
+      description: 'Expanded services to include fashion, maternity, and commercial photography'
+    },
+    {
+      year: '2022',
+      title: 'Professional Recognition',
+      milestone: 'Industry Experience',
+      description: 'Gained recognition for quality work and built strong client relationships'
+    },
+    {
+      year: '2023',
+      title: 'Continued Excellence',
+      milestone: 'Service Diversification',
+      description: 'Expanded to cover various events and maintained high-quality standards'
+    },
+    {
+      year: 'Present',
+      title: 'Established Professional',
+      milestone: 'Current Status',
+      description: 'Established photographer with expertise across multiple photography genres'
     }
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience & Achievements</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Over the years, I've had the privilege of capturing countless precious moments and building 
-            lasting relationships with my clients. Here's a glimpse of my journey and accomplishments.
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Experience & Journey</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            My photography journey started in 2017, and over the years, I've had the privilege of capturing 
+            countless precious moments across various categories. Here's a glimpse of my professional growth.
           </p>
         </div>
 
@@ -84,18 +108,18 @@ const Experience = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group"
+              className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center group"
             >
               <div className="text-4xl mb-4 transform transition-transform duration-300 group-hover:scale-110">
                 {stat.icon}
               </div>
-              <div className="text-4xl font-bold text-gray-900 mb-2">
+              <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                 {stat.number}
               </div>
-              <div className="text-xl font-semibold text-gray-700 mb-3">
+              <div className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-3">
                 {stat.label}
               </div>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 dark:text-gray-400 text-sm">
                 {stat.description}
               </p>
             </div>
@@ -104,14 +128,14 @@ const Experience = () => {
 
         {/* Timeline Section */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Recent Achievements
+          <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
+            Photography Journey
           </h3>
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-500 to-purple-500 rounded-full"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
             
-            {achievements.map((achievement, index) => (
+            {photographyJourney.map((journey, index) => (
               <div
                 key={index}
                 className={`relative flex items-center mb-12 ${
@@ -119,22 +143,22 @@ const Experience = () => {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-4 border-pink-500 rounded-full z-10"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white dark:bg-gray-800 border-4 border-blue-500 rounded-full z-10"></div>
                 
                 {/* Content */}
                 <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="text-pink-500 font-bold text-lg mb-2">
-                      {achievement.year}
+                  <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="text-blue-500 dark:text-blue-400 font-bold text-lg mb-2">
+                      {journey.year}
                     </div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">
-                      {achievement.title}
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                      {journey.title}
                     </h4>
-                    <div className="text-gray-600 font-medium mb-3">
-                      {achievement.organization}
+                    <div className="text-gray-600 dark:text-gray-400 font-medium mb-3">
+                      {journey.milestone}
                     </div>
-                    <p className="text-gray-600 text-sm">
-                      {achievement.description}
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">
+                      {journey.description}
                     </p>
                   </div>
                 </div>
@@ -144,13 +168,13 @@ const Experience = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl p-12 text-white">
+        <div className="text-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
             Ready to Create Beautiful Memories?
           </h3>
           <p className="text-xl mb-8 text-white/90">
             Let's work together to capture your special moments with the same passion and expertise 
-            that has earned me recognition in the industry.
+            that I've developed throughout my photography journey.
           </p>
           <button
             onClick={() => {

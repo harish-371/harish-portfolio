@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { ThemeProvider } from './components/ThemeProvider';
+import { LoadingScreen } from './components/LoadingScreen';
 import BackgroundAnimation from './components/BackgroundAnimation';
 import Header from './components/common/Header';
 import Hero from './components/sections/Hero';
@@ -14,8 +15,17 @@ import Footer from './components/common/Footer';
 import CategoryGallery from './pages/CategoryGallery';
 
 function App() {
+  const [isLoadingComplete, setIsLoadingComplete] = useState(false);
+
+  const handleLoadingComplete = () => {
+    setIsLoadingComplete(true);
+  };
+
   return (
     <ThemeProvider>
+      {!isLoadingComplete && (
+        <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+      )}
       <Router>
         <div className="App relative min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
           <BackgroundAnimation />

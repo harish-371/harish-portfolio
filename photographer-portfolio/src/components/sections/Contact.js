@@ -186,7 +186,9 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://instagram.com/sarahjohnsonphoto"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center text-white hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

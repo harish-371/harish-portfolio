@@ -17,6 +17,10 @@ module.exports = {
         'gradient': 'gradient 15s ease infinite',
         'blob': 'blob 7s infinite',
         'shimmer': 'shimmer 2s infinite',
+        'fade-in-delay': 'fadeInDelay 0.8s ease-out 1s forwards',
+        'fade-in-delay-2': 'fadeInDelay 0.8s ease-out 1.5s forwards',
+        'typing': 'typing 3.5s steps(40, end)',
+        'blink-caret': 'blink-caret 0.75s step-end infinite',
       },
       keyframes: {
         float: {
@@ -58,6 +62,24 @@ module.exports = {
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
+        },
+        fadeInDelay: {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(20px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+        typing: {
+          'from': { width: '0' },
+          'to': { width: '100%' },
+        },
+        'blink-caret': {
+          'from, to': { borderColor: 'transparent' },
+          '50%': { borderColor: 'currentColor' },
         },
       },
       backgroundImage: {

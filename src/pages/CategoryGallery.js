@@ -248,7 +248,7 @@ const CategoryGallery = () => {
               </svg>
               <span>Back to Portfolio</span>
             </button>
-            <h1 className="text-2xl font-bold text-gray-900">Sarah Johnson Photography</h1>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Harish Pampaana Photography</h1>
           </div>
         </div>
       </div>

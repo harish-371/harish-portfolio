@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const CategoryGallery = () => {
@@ -200,21 +200,21 @@ const CategoryGallery = () => {
     setSelectedImage(null);
   };
 
-  const nextImage = () => {
-    if (selectedImage) {
+  const nextImage = useCallback(() => {
+    if (selectedImage && currentGallery) {
       const currentIndex = currentGallery.images.findIndex(img => img.id === selectedImage.id);
       const nextIndex = (currentIndex + 1) % currentGallery.images.length;
       setSelectedImage(currentGallery.images[nextIndex]);
     }
-  };
+  }, [selectedImage, currentGallery]);
 
-  const prevImage = () => {
-    if (selectedImage) {
+  const prevImage = useCallback(() => {
+    if (selectedImage && currentGallery) {
       const currentIndex = currentGallery.images.findIndex(img => img.id === selectedImage.id);
       const prevIndex = (currentIndex - 1 + currentGallery.images.length) % currentGallery.images.length;
       setSelectedImage(currentGallery.images[prevIndex]);
     }
-  };
+  }, [selectedImage, currentGallery]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -227,7 +227,7 @@ const CategoryGallery = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedImage]);
+  }, [selectedImage, nextImage, prevImage]);
 
   if (!currentGallery) {
     return null;

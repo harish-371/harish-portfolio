@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+const GREETINGS = ["Hi, I'm", "Welcome to my portfolio", "Capturing Life's Beauty"];
+const ROLES = ["Wedding Photographer", "Passionate Photographer", "Visual Storyteller"];
+
 const Hero = () => {
   const [greetingIndex, setGreetingIndex] = useState(0);
   const [greetingText, setGreetingText] = useState("");
@@ -8,9 +11,6 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
   const [showGreeting, setShowGreeting] = useState(true);
   
-  const greetings = ["Hi, I'm", "Welcome to my portfolio", "Capturing Life's Beauty"];
-  const roles = ["Wedding Photographer", "Passionate Photographer", "Visual Storyteller"];
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -44,12 +44,12 @@ const Hero = () => {
     
     const greetingTimeout = setTimeout(() => {
       // Set new greeting text and fade it in
-      setGreetingText(greetings[greetingIndex]);
+      setGreetingText(GREETINGS[greetingIndex]);
       setShowGreeting(true);
       
       // Start typing role after greeting appears
       setTimeout(() => {
-        typeRole(roles[roleIndex]);
+        typeRole(ROLES[roleIndex]);
       }, 300);
     }, 200);
 
@@ -63,8 +63,8 @@ const Hero = () => {
         setRoleText("");
         setShowGreeting(false);
         setTimeout(() => {
-          setGreetingIndex((current) => (current + 1) % greetings.length);
-          setRoleIndex((current) => (current + 1) % roles.length);
+          setGreetingIndex((current) => (current + 1) % GREETINGS.length);
+          setRoleIndex((current) => (current + 1) % ROLES.length);
         }, 200);
       }
     }, 3000);

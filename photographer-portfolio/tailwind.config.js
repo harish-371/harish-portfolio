@@ -83,8 +83,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'gradient-light': 'linear-gradient(-45deg, #ffffff, #f8fafc, #e2e8f0, #f1f5f9)',
-        'gradient-dark': 'linear-gradient(-45deg, #0f172a, #1e293b, #334155, #475569)',
+        'gradient-light': 'linear-gradient(-45deg, #ffffff, #f3f4f6, #dbeafe, #e0f2fe, #f3e8ff)',
+        'gradient-dark': 'linear-gradient(-45deg, #020617, #0f172a, #1e293b, #3f3f46, #475569)',
       },
     },
   },

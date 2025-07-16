@@ -13,6 +13,7 @@ import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
 import Footer from './components/common/Footer';
 import CategoryGallery from './pages/CategoryGallery';
+import AdminUpload from './pages/AdminUpload';
 
 function App() {
   const [isLoadingComplete, setIsLoadingComplete] = useState(false);
@@ -43,6 +44,7 @@ function App() {
               </>
             } />
             <Route path="/portfolio/:categoryId" element={<CategoryGallery />} />
+            <Route path="/admin-upload" element={<AdminUpload />} />
           </Routes>
         </div>
       </Router>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const GREETINGS = ["Hi, I'm", "Welcome to my portfolio", "Capturing Life's Beauty"];
+const GREETINGS = ["Hi, I'm","Have a Great Day", "Welcome to my portfolio", "Capturing Life's Beauty"];
 const ROLES = ["Wedding Photographer", "Passionate Photographer", "Visual Storyteller"];
 
 const Hero = () => {

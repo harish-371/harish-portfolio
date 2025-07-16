@@ -347,7 +347,7 @@ const CategoryGallery = () => {
 
       {/* Gallery Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]"><!-- Masonry style -->
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
           {currentGallery.images.map((image) => (
             <div
               key={image.id}

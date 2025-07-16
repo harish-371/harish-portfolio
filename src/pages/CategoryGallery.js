@@ -188,6 +188,78 @@ const CategoryGallery = () => {
           description: 'Finding beauty in everyday moments'
         }
       ]
+    },
+    prewedding: {
+      title: 'Pre-Wedding Photography',
+      description: 'Creative pre-wedding shoots with stunning concepts',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Pre-Wedding Shoot',
+          description: 'A creative pre-wedding moment.'
+        }
+      ]
+    },
+    maternity: {
+      title: 'Maternity Photography',
+      description: 'Beautiful maternity sessions celebrating motherhood',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1555252333-9f8e92e65df9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Maternity Session',
+          description: 'Celebrating motherhood.'
+        }
+      ]
+    },
+    birthday: {
+      title: 'Birthday Photography',
+      description: 'Fun birthday celebrations and special moments',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Birthday Party',
+          description: 'A fun birthday celebration.'
+        }
+      ]
+    },
+    'half-saree': {
+      title: 'Half Saree Ceremony',
+      description: 'Traditional half saree ceremonies and cultural celebrations',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Half Saree Event',
+          description: 'A traditional half saree ceremony.'
+        }
+      ]
+    },
+    'commercial-events': {
+      title: 'Commercial Events',
+      description: 'Corporate events, product launches, and business gatherings',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Corporate Event',
+          description: 'A professional corporate event.'
+        }
+      ]
+    },
+    fashion: {
+      title: 'Fashion Photography',
+      description: 'Creative fashion shoots and portfolio photography',
+      images: [
+        {
+          id: 1,
+          src: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+          title: 'Fashion Shoot',
+          description: 'A creative fashion shoot.'
+        }
+      ]
     }
   };
 

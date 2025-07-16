@@ -42,7 +42,7 @@ function App() {
                 <Footer />
               </>
             } />
-            <Route path="/category/:categoryId" element={<CategoryGallery />} />
+            <Route path="/portfolio/:categoryId" element={<CategoryGallery />} />
           </Routes>
         </div>
       </Router>

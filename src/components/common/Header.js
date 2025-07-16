@@ -28,12 +28,22 @@ const Header = () => {
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <h1 className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900 dark:text-white' : 'text-gray-900 dark:text-white'
-            }`}>
-              Harish Pampaana
-            </h1>
+          <div className="flex-shrink-0 flex items-center justify-center w-full">
+            {/* Camera Icon Logo Only */}
+            <svg
+              className="w-10 h-10 md:w-12 md:h-12 text-gray-900 dark:text-white mx-auto"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 7h2l2-3h6l2 3h2a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2zm9 4a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
           </div>
           
           {/* Desktop Navigation */}

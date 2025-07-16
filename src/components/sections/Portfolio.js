@@ -64,7 +64,7 @@ const Portfolio = () => {
   ];
 
   const handleCategoryClick = (categoryId) => {
-    navigate(`/category/${categoryId}`);
+    navigate(`/portfolio/${categoryId}`);
   };
 
   return (

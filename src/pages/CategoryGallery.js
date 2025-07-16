@@ -275,23 +275,21 @@ const CategoryGallery = () => {
 
       {/* Gallery Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]"><!-- Masonry style -->
           {currentGallery.images.map((image) => (
             <div
               key={image.id}
-              className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+              className="mb-6 break-inside-avoid group cursor-pointer transform transition-all duration-300 hover:scale-105"
               onClick={() => openLightbox(image)}
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="aspect-square">
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white dark:bg-gray-900">
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 rounded-2xl"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl">
                   <h3 className="text-white font-semibold text-lg mb-1">{image.title}</h3>
                   <p className="text-white/90 text-sm">{image.description}</p>
                 </div>

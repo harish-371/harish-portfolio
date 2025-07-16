@@ -26,31 +26,31 @@ const About = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-6 bg-white/80 dark:bg-gray-900/80 rounded-2xl p-8 shadow-lg">
+          <div className="space-y-8 bg-white/90 dark:bg-gray-900/90 rounded-2xl p-10 shadow-xl border border-gray-200 dark:border-gray-800">
             <div className="animate-fadeIn">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
                 Passionate About Capturing Life's Beautiful Moments
               </h3>
-              <p className="text-lg text-gray-700 dark:text-gray-200 leading-relaxed mb-6">
+              <p className="text-xl text-gray-800 dark:text-gray-100 leading-relaxed mb-8 font-sans" style={{lineHeight: '2'}}>
                 I am a wedding photographer with 8+ years of experience, dedicated to capturing genuine emotions and timeless memories. My approach blends creativity, professionalism, and a love for storytelling. Let's create beautiful moments together!
               </p>
             </div>
 
             {/* Skills/Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                <div className="text-3xl font-bold text-pink-500 mb-2">500+</div>
-                <div className="text-gray-700 dark:text-gray-200">Happy Couples</div>
+            <div className="grid grid-cols-2 gap-8">
+              <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-800">
+                <div className="text-4xl font-extrabold text-pink-500 mb-2">500+</div>
+                <div className="text-gray-800 dark:text-gray-100 text-lg font-medium">Happy Couples</div>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md">
-                <div className="text-3xl font-bold text-purple-500 mb-2">8+</div>
-                <div className="text-gray-700 dark:text-gray-200">Years Experience</div>
+              <div className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-800">
+                <div className="text-4xl font-extrabold text-purple-500 mb-2">8+</div>
+                <div className="text-gray-800 dark:text-gray-100 text-lg font-medium">Years Experience</div>
               </div>
             </div>
 
             {/* Specialties */}
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white">My Approach</h4>
+              <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">My Approach</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   { icon: '📸', text: 'Candid Moments' },
@@ -58,9 +58,9 @@ const About = () => {
                   { icon: '🎨', text: 'Artistic Vision' },
                   { icon: '⭐', text: 'Professional Service' }
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
+                  <div key={index} className="flex items-center space-x-3 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-100 dark:border-gray-800">
                     <span className="text-2xl">{item.icon}</span>
-                    <span className="text-gray-700 dark:text-gray-200 font-medium">{item.text}</span>
+                    <span className="text-gray-800 dark:text-gray-100 font-medium text-lg">{item.text}</span>
                   </div>
                 ))}
               </div>

@@ -40,57 +40,6 @@ const Experience = () => {
     }
   ];
 
-  const photographyJourney = [
-    {
-      year: '2017',
-      title: 'Photography Journey Begins',
-      milestone: 'First Camera Purchase',
-      description: 'Started exploring photography as a hobby with my first DSLR camera'
-    },
-    {
-      year: '2018',
-      title: 'Learning & Practice',
-      milestone: 'Skill Development',
-      description: 'Dedicated time to learning photography techniques and practicing regularly'
-    },
-    {
-      year: '2019',
-      title: 'First Professional Shoots',
-      milestone: 'Career Transition',
-      description: 'Transitioned from hobby to profession with first paid photography assignments'
-    },
-    {
-      year: '2020',
-      title: 'Specialization Focus',
-      milestone: 'Wedding Photography',
-      description: 'Specialized in wedding photography and traditional ceremony documentation'
-    },
-    {
-      year: '2021',
-      title: 'Business Growth',
-      milestone: 'Client Base Expansion',
-      description: 'Expanded services to include fashion, maternity, and commercial photography'
-    },
-    {
-      year: '2022',
-      title: 'Professional Recognition',
-      milestone: 'Industry Experience',
-      description: 'Gained recognition for quality work and built strong client relationships'
-    },
-    {
-      year: '2023',
-      title: 'Continued Excellence',
-      milestone: 'Service Diversification',
-      description: 'Expanded to cover various events and maintained high-quality standards'
-    },
-    {
-      year: 'Present',
-      title: 'Established Professional',
-      milestone: 'Current Status',
-      description: 'Established photographer with expertise across multiple photography genres'
-    }
-  ];
-
   return (
     <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

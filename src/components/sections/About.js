@@ -32,21 +32,7 @@ const About = () => {
                 Passionate About Capturing Life's Beautiful Moments
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                With over 8 years of experience in photography, I specialize in creating timeless 
-                wedding memories that couples will treasure forever. My journey began with a simple 
-                love for capturing genuine emotions and authentic moments.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                I believe that every couple has a unique story, and my goal is to document your 
-                special day in a way that reflects your personality and love story. From intimate 
-                ceremonies to grand celebrations, I approach each wedding with creativity, 
-                professionalism, and an eye for detail.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                When I'm not behind the camera, you'll find me exploring new photography techniques, 
-                traveling to discover inspiring locations, or spending time with my family. I'm also 
-                passionate about technology and love incorporating the latest innovations into my 
-                photography workflow to deliver the best possible results for my clients.
+                I am a wedding photographer with 8+ years of experience, dedicated to capturing genuine emotions and timeless memories. My approach blends creativity, professionalism, and a love for storytelling. Let's create beautiful moments together!
               </p>
             </div>
 

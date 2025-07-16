@@ -74,6 +74,13 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Translucent Background Image */}
+      <img
+        src="/logo512.png"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm z-0 pointer-events-none select-none"
+        aria-hidden="true"
+      />
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-4">

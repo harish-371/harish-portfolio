@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-12 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 items-start md:items-center">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Harish Pampaana Photography</h3>
@@ -73,7 +73,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 text-center md:text-left">
             <div className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0 text-center md:text-left">
               © {currentYear} Harish Pampaana Photography. All rights reserved.
             </div>

@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '767394145';
+    const phoneNumber = '917673941745';
     const message = 'Hi! I would like to inquire about your photography services.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -185,7 +185,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white">WhatsApp</h4>
-                  <p className="text-gray-600 dark:text-gray-400">+91 767394145</p>
+                  <p className="text-gray-600 dark:text-gray-400">+91 7673941745</p>
                 </div>
               </div>
 

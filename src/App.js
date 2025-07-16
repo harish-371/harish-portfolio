@@ -27,7 +27,7 @@ function App() {
         <LoadingScreen onLoadingComplete={handleLoadingComplete} />
       )}
       <Router>
-        <div className="App relative min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div className="App relative min-h-screen transition-colors duration-300">
           <BackgroundAnimation />
           <Routes>
             <Route path="/" element={

@@ -125,47 +125,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-
-        {/* Timeline Section */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
-            Photography Journey
-          </h3>
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-500 to-purple-500 rounded-full"></div>
-            
-            {photographyJourney.map((journey, index) => (
-              <div
-                key={index}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? 'justify-start' : 'justify-end'
-                }`}
-              >
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white dark:bg-gray-800 border-4 border-blue-500 rounded-full z-10"></div>
-                
-                {/* Content */}
-                <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="text-blue-500 dark:text-blue-400 font-bold text-lg mb-2">
-                      {journey.year}
-                    </div>
-                    <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                      {journey.title}
-                    </h4>
-                    <div className="text-gray-600 dark:text-gray-400 font-medium mb-3">
-                      {journey.milestone}
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">
-                      {journey.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Timeline Section removed */}
 
         {/* Call to Action */}
         <div className="text-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl p-12 text-white">

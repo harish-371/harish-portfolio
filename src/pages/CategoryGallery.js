@@ -6,12 +6,17 @@ const CategoryGallery = () => {
   const navigate = useNavigate();
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Sample gallery data - in a real app, this would come from an API
+  // To use your own images:
+  // 1. Upload your images to the public folder or a CDN.
+  // 2. Replace the 'src' fields below with your image URLs.
+  // 3. Make sure the category keys (e.g., 'wedding', 'engagement', etc.) match those in Portfolio.js.
   const galleryData = {
-    weddings: {
+    wedding: {
       title: 'Wedding Photography',
       description: 'Capturing the most beautiful moments of your special day',
       images: [
+        // Example:
+        // { id: 1, src: '/your-uploaded-image.jpg', title: 'Your Title', description: 'Your Description' },
         {
           id: 1,
           src: 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',
@@ -51,9 +56,11 @@ const CategoryGallery = () => {
       ]
     },
     engagement: {
-      title: 'Engagement Sessions',
+      title: 'Engagement Photography',
       description: 'Intimate couple sessions capturing your love story',
       images: [
+        // Example:
+        // { id: 1, src: '/your-uploaded-image.jpg', title: 'Your Title', description: 'Your Description' },
         {
           id: 1,
           src: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',

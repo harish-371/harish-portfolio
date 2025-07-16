@@ -60,11 +60,17 @@ const Services = () => {
             Services Offered
           </h2>
         </div>
-        <ol className="list-decimal list-inside text-xl text-gray-700 dark:text-gray-200 max-w-xl mx-auto space-y-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <li key={index}>{service.title}</li>
+            <div
+              key={index}
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8 flex flex-col items-center text-center border border-gray-100 dark:border-gray-800 hover:border-blue-400 dark:hover:border-blue-500"
+            >
+              <div className="text-4xl mb-4">{service.icon}</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">{service.title}</div>
+            </div>
           ))}
-        </ol>
+        </div>
       </div>
     </section>
   );
